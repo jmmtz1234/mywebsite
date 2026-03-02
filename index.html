@@ -6,207 +6,155 @@
 <style>
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: white;
+margin: 0;
+font-family: Arial, sans-serif;
+color: white;
+background: url("background.jpg");
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
 }
+
 
 /* HEADER */
 
 header {
-  background: rgba(0,0,0,0.7);
-  padding: 20px;
-  text-align: center;
-  font-size: 35px;
-  font-weight: bold;
-  color: orange;
+background: rgba(0,0,0,0.4);
+padding: 20px;
+text-align: center;
+font-size: 35px;
+font-weight: bold;
+color: #f1f1f1;
+backdrop-filter: blur(6px);
 }
 
+
+/* NAVBAR */
+
 nav {
-  background: rgba(0,0,0,0.6);
-  padding: 10px;
-  text-align: center;
+background: rgba(0,0,0,0.3);
+padding: 10px;
+text-align: center;
+backdrop-filter: blur(5px);
 }
 
 nav a {
-  color: white;
-  margin: 15px;
-  text-decoration: none;
-  font-size: 18px;
+color: white;
+margin: 10px;
+text-decoration: none;
+font-size: 18px;
 }
 
-/* HERO BACKGROUND */
+nav a:hover {
+color: lightgray;
+}
+
+
+/* HERO */
 
 .hero {
-  background-image: url("https://images.unsplash.com/photo-1581092160607-ee22731d8c6b");
-  background-size: cover;
-  background-position: center;
-  padding: 150px 20px;
-  text-align: center;
-}
-
-/* DARK OVERLAY */
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 500px;
-  background: rgba(0,0,0,0.6);
+text-align: center;
+padding: 150px 20px;
+background: rgba(0,0,0,0.4);
 }
 
 .hero h1 {
-  font-size: 55px;
-  color: orange;
-  position: relative;
+font-size: 45px;
 }
 
-/* TRANSPARENT BUTTON */
-
-.button {
-  border: 2px solid orange;
-  color: orange;
-  padding: 15px 25px;
-  display: inline-block;
-  margin-top: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  background: transparent;
-  position: relative;
+button {
+background: rgba(255,255,255,0.1);
+color: white;
+border: 1px solid white;
+padding: 12px 20px;
+font-size: 16px;
+cursor: pointer;
+backdrop-filter: blur(5px);
 }
 
-.button:hover {
-  background: orange;
-  color: black;
+button:hover {
+background: rgba(255,255,255,0.3);
 }
 
-/* SECTION */
-
-.section {
-  background: #111;
-  padding: 40px;
-  text-align: center;
-}
 
 /* SERVICES */
 
 .services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+background: rgba(0,0,0,0.5);
+padding: 40px;
+text-align: center;
 }
 
 .card {
-  background: #222;
-  padding: 15px;
-  width: 250px;
-  border-radius: 10px;
+display: inline-block;
+background: rgba(255,255,255,0.1);
+padding: 20px;
+margin: 10px;
+width: 200px;
+border-radius: 10px;
+backdrop-filter: blur(5px);
 }
 
-.card img {
-  width: 100%;
-  border-radius: 10px;
-}
 
 /* CONTACT */
 
-.contact {
-  background: black;
-  padding: 40px;
-  text-align: center;
-}
-
 footer {
-  background: #000;
-  text-align: center;
-  padding: 20px;
+background: rgba(0,0,0,0.6);
+padding: 20px;
+text-align: center;
 }
 
 </style>
-</head>
 
+</head>
 <body>
+
 
 <header>
 Martinez Concrete Design
 </header>
 
+
 <nav>
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
 </nav>
 
 
-<div class="hero" id="home">
+<div class="hero">
 
 <h1>Strong Concrete. Clean Design.</h1>
 
-<a class="button" href="tel:4694067588">
-Call Now 469-406-7588
-</a>
+<button onclick="location.href='tel:4694067588'">
+Call 469-406-7588
+</button>
 
 </div>
 
-
-<div class="section" id="services">
-
-<h2>Our Services</h2>
 
 <div class="services">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
-<h3>Driveways</h3>
-</div>
+<h2>Our Services</h2>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
-<h3>Patios</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1581093588401-22d3c3f7b29c">
-<h3>Foundations</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1597007030739-6d2e9c7b9b2d">
-<h3>Custom Concrete</h3>
-</div>
-
-</div>
-
-</div>
-
-
-<div class="contact" id="contact">
-
-<h2>Contact</h2>
-
-<p>
-Phone:
-<a href="tel:4694067588">469-406-7588</a>
-</p>
-
-<p>
-Email:
-<a href="mailto:lugojose40@gmail.com">
-lugojose40@gmail.com
-</a>
-</p>
-
-<p>Princeton, TX</p>
+<div class="card">Driveways</div>
+<div class="card">Patios</div>
+<div class="card">Foundations</div>
+<div class="card">Custom Concrete</div>
 
 </div>
 
 
 <footer>
-Martinez Concrete Design © 2026
+
+Phone: 469-406-7588  
+<br>
+Email: lugojose40@gmail.com  
+<br>
+Princeton, TX
+
 </footer>
+
 
 </body>
 </html>
