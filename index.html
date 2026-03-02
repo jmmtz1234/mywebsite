@@ -8,12 +8,13 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #111;
   color: white;
 }
 
+/* HEADER */
+
 header {
-  background: #1a1a1a;
+  background: rgba(0,0,0,0.7);
   padding: 20px;
   text-align: center;
   font-size: 35px;
@@ -22,7 +23,7 @@ header {
 }
 
 nav {
-  background: #222;
+  background: rgba(0,0,0,0.6);
   padding: 10px;
   text-align: center;
 }
@@ -34,35 +35,62 @@ nav a {
   font-size: 18px;
 }
 
-nav a:hover {
-  color: orange;
-}
+/* HERO BACKGROUND */
 
 .hero {
-  background: black;
-  padding: 60px;
+  background-image: url("https://images.unsplash.com/photo-1581092160607-ee22731d8c6b");
+  background-size: cover;
+  background-position: center;
+  padding: 150px 20px;
   text-align: center;
 }
 
-.hero h1 {
-  font-size: 50px;
-  color: orange;
+/* DARK OVERLAY */
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 500px;
+  background: rgba(0,0,0,0.6);
 }
 
+.hero h1 {
+  font-size: 55px;
+  color: orange;
+  position: relative;
+}
+
+/* TRANSPARENT BUTTON */
+
 .button {
-  background: orange;
-  color: black;
+  border: 2px solid orange;
+  color: orange;
   padding: 15px 25px;
   display: inline-block;
   margin-top: 20px;
   font-weight: bold;
   text-decoration: none;
+  background: transparent;
+  position: relative;
 }
 
+.button:hover {
+  background: orange;
+  color: black;
+}
+
+/* SECTION */
+
 .section {
+  background: #111;
   padding: 40px;
   text-align: center;
 }
+
+/* SERVICES */
 
 .services {
   display: flex;
@@ -73,18 +101,26 @@ nav a:hover {
 
 .card {
   background: #222;
-  padding: 20px;
-  width: 220px;
+  padding: 15px;
+  width: 250px;
   border-radius: 10px;
 }
 
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CONTACT */
+
 .contact {
-  background: #000;
+  background: black;
   padding: 40px;
+  text-align: center;
 }
 
 footer {
-  background: #1a1a1a;
+  background: #000;
   text-align: center;
   padding: 20px;
 }
@@ -104,14 +140,13 @@ Martinez Concrete Design
 <a href="#contact">Contact</a>
 </nav>
 
+
 <div class="hero" id="home">
 
 <h1>Strong Concrete. Clean Design.</h1>
 
-<p>Driveways • Patios • Foundations • Decorative Concrete</p>
-
 <a class="button" href="tel:4694067588">
-Call Now: 469-406-7588
+Call Now 469-406-7588
 </a>
 
 </div>
@@ -124,23 +159,23 @@ Call Now: 469-406-7588
 <div class="services">
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
 <h3>Driveways</h3>
-<p>Concrete driveways built to last</p>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
 <h3>Patios</h3>
-<p>Stamped & custom patios</p>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1581093588401-22d3c3f7b29c">
 <h3>Foundations</h3>
-<p>Strong concrete foundations</p>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1597007030739-6d2e9c7b9b2d">
 <h3>Custom Concrete</h3>
-<p>Decorative & repair work</p>
 </div>
 
 </div>
@@ -152,19 +187,19 @@ Call Now: 469-406-7588
 
 <h2>Contact</h2>
 
-<p>Phone:
-<a href="tel:4694067588">
-469-406-7588
-</a>
+<p>
+Phone:
+<a href="tel:4694067588">469-406-7588</a>
 </p>
 
-<p>Email:
+<p>
+Email:
 <a href="mailto:lugojose40@gmail.com">
 lugojose40@gmail.com
 </a>
 </p>
 
-<p>Location: Princeton, TX</p>
+<p>Princeton, TX</p>
 
 </div>
 
